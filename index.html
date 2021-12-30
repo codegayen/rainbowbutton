@@ -1,0 +1,41 @@
+<a alt="Button"></a>
+<style type="text/css">
+	body{
+		background: #191919;
+	}
+	a{
+		width: 100px;
+		height: 40px;
+		text-decoration: none;
+		color: #fff;
+		background: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%,#fc4f4f 80%, #00c0ff 100%);
+		border-radius: 5px;
+		align-items: center;
+		justify-content: center;
+		font-size: 5vw;
+		font-weight: bold;
+		margin: 50px;
+		display: flex;
+	}
+	a:after{
+		content: attr(alt);
+		width: 95px;
+		height: 36px;
+		text-decoration: none;
+		color: #fff;
+		background: #191919;
+		border-radius: 5px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		font-family: sans-serif;
+	}
+	a:hover{
+		animation: btn 2s linear infinite;
+	}
+	@keyframes btn{
+		to{
+			background-position: 20vw;
+		}
+	}
+</style>
